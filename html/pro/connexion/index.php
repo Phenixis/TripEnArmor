@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">*
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image" href="/public/images/favicon.png">
     <link rel="stylesheet" href="/styles/input.css">
@@ -139,7 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Événement pour afficher le mot de passe lorsque l'utilisateur clique sur l'icône
     if (togglePassword) {
-        togglePassword.addEventListener('onclick', function () {
+        togglePassword.addEventListener('click', function () {
             if (mdp.type === 'password') {
                 mdp.type = 'text';
                 this.classList.remove('fa-eye');

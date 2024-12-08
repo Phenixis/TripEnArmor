@@ -26,7 +26,7 @@ if (empty($_POST)) { ?>
         <link rel="stylesheet" href="/styles/input.css">
 
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="/styles/config.js"></script>*
+        <script src="/styles/config.js"></script>
         <script src="https://kit.fontawesome.com/d815dd872f.js" crossorigin="anonymous"></script>
 
         <title>Connexion au compte - PACT</title>
@@ -96,7 +96,7 @@ if (empty($_POST)) { ?>
 
         // Événement pour afficher le mot de passe lorsque l'utilisateur clique sur l'icône
         if (togglePassword) {
-            togglePassword.addEventListener('onclick', function () {
+            togglePassword.addEventListener('click', function () {
                 if (mdp.type === 'password') {
                     mdp.type = 'text';
                     this.classList.remove('fa-eye');
